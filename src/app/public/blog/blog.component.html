@@ -1,0 +1,71 @@
+<div class="blog-page">
+    <div class="uk-child-width-expand@s" uk-grid>
+        <div>
+            <img src="assets/images/blog_pages_images.png" alt="blog-image">
+        </div>
+        <div class="uk-grid-item-match heading">
+            <p><span class="iconify" data-icon="mdi-chart-bubble" data-inline="false"></span>BLOG</p>
+            <h1 class="header">Baca dan pelajari ribuan artikel dan tutorial coding secara gratis</h1>
+            <p class="content">
+                Pengetahuan adalah senjata para developer profesional dalam membangun masa depan
+            </p>
+        </div>
+    </div>
+    <div class="content-blog">
+        <div class="bloging">
+            <div class="header uk-text-center">
+                <h1>Articles</h1>
+            </div>
+            <div class="uk-child-width-1-4@s" uk-grid>
+                <div>
+                    <mat-card>
+                        <div class="image">
+                            <img src="https://i.ibb.co/PMvN4mZ/ADA.jpg  " alt="image-blog">
+                        </div>
+                        <div class="mat-card-content">
+                            <h3>Artificial Intelligence, Machine Learning dan Deep Learning</h3>
+                        </div>
+                    </mat-card>
+                </div>
+
+                <div>
+                    <mat-card>
+                        <div class="image">
+                            <img src="https://i.ibb.co/M5dQZdH/ADA.jpg" alt="image-blog">
+                        </div>
+                        <div class="mat-card-content">
+                            <h3>Prediksi Teknologi di 2021 Bagi Developer</h3>
+                        </div>
+                    </mat-card>
+                </div>
+
+                <div>
+                    <mat-card>
+                        <div class="image">
+                            <img src="https://i.ibb.co/h7RM68r/Apakah-kamu-masih-menggunakan-lodash.jpg"
+                                alt="image-blog">
+                        </div>
+                        <div class="mat-card-content">
+                            <h3>Beberapa Fitur HTML yang Jarang Anda Gunakan</h3>
+                        </div>
+                    </mat-card>
+                </div>
+                <div>
+                    <mat-card>
+                        <div class="image">
+                            <img src="https://i.ibb.co/p35sLSv/Apakah-kamu-masih-menggunakan-lodash.jpg"
+                                alt="image-blog">
+                        </div>
+                        <div class="mat-card-content">
+                            <h3>5 Alasan Mengapa Programmer Harus Ngeblog</h3>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paging">
+        <mat-paginator [length]="100" [pageSize]="12" [pageSizeOptions]="[6, 12, 24, 100]">
+        </mat-paginator>
+    </div>
+</div>

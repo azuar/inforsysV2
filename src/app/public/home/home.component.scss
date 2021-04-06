@@ -1,0 +1,53 @@
+.header {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    text-shadow: 3px 3px 6px rgb(14 10 65 / 25%);
+    color: #3b3950;
+  }
+  .content {
+    font-size: 20px;
+    line-height: 1.8;
+    font-family: "Mulish", sans-serif;
+  }
+  .about-us {
+    margin-top: 40px;
+  }
+  .about {
+    background-color: #fbfbff;
+    margin-right: -70px;
+    margin-left: -70px;
+    padding-bottom: 30px;
+  }
+  .iconify {
+    color: blue;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .margin {
+    margin-top: 15px;
+    &:hover {
+      background-color: #5a4fdc;
+      p,
+      h2 {
+        color: white;
+      }
+      .iconify {
+        color: white;
+      }
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .header {
+      p {
+        font-size: 28px;
+      }
+    }
+  
+    .header {
+      text-align: center;
+    }
+  }
+  

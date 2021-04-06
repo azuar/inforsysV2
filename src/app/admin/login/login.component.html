@@ -1,0 +1,26 @@
+<div class="uk-flex uk-flex-middle uk-flex-center login">
+    <mat-card class="uk-width-1-2@m">
+        <div class="uk-flex uk-flex-center">
+            <h3>Sign in to admin account</h3>
+        </div>
+        <mat-card-content>
+            <mat-form-field class="uk-width-1-1" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="your email">
+            </mat-form-field>
+            <mat-form-field class="uk-width-1-1" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="Your password">
+            </mat-form-field>
+            <div class="uk-flex uk-flex-right">
+                <button mat-raised-button class="uk-width-1-1" style="background-color: #F92601; color: white;">LOGIN
+                    <span class="material-icons">
+                        login
+                    </span></button>
+            </div>
+            <div class="forgot uk-text-center">
+                <a routerLink="/admin/forgot">Forgot Password ?</a>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
