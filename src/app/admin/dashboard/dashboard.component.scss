@@ -1,0 +1,22 @@
+.header {
+    h3{
+        font-family: "Londrina Solid", cursive;
+        font-size: 30px;
+
+        .iconify {
+            color: red;
+        }
+    }
+}
+
+.content {
+    h3 {
+        font-weight: 700;
+    }
+    p {
+        margin: 40px 0 ;    
+        font-family: 'Bebas Neue', cursive; 
+        font-size: 100px;
+        color: rgb(185, 44, 44);
+    }
+}

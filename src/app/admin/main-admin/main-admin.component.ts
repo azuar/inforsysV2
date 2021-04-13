@@ -18,4 +18,43 @@ export class MainAdminComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 
+  ngOnInit(): void {
+    // this.checkLogin();
+  }
+  menu = [
+    {
+      name: 'Dashboard',
+      icon: 'dashboard',
+      url: '/admin/dashboard'
+    },
+    {
+      name: 'Post',
+      icon: 'post_add',
+      url: '/admin/post'
+    },
+    {
+      name: 'Messages',
+      icon: 'forum',
+      url: '/admin/messages'
+    },
+  ];
+
+  //Login Chek
+  // checkLogin() {
+  //   this.api.get('bookswithauth/status').subscribe(res => {
+  //     return;
+  //   }, err => {
+  //     this.router.navigate(['/login']);
+  //   })
+  // }
+
+  // //Logout Function
+  // logout() {
+  //   let conf = confirm('Yakin Ingin Keluar ?');
+  //   if (conf) {
+  //     localStorage.removeItem('appToken');
+  //     window.location.reload();
+  //   }
+  // }
+
 }

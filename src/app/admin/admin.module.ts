@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AdminComponent } from './admin.component';
 import { PostComponent } from './post/post.component';
 import { MessageComponent } from './message/message.component';
-import { LoginComponent } from './login/login.component';
-import { ForgotComponent } from './forgot/forgot.component';
+
 import { RouterModule, Routes } from '@angular/router';
 import { MaterialDesign } from '../material-desain/material';
 import { MainAdminComponent } from './main-admin/main-admin.component';
@@ -14,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -21,20 +21,16 @@ const routes: Routes = [
     component: AdminComponent,
     children: [
       {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
-        path: 'forgot',
-        component: ForgotComponent
-      },
-      {
         path: 'post',
         component: PostComponent
       },
       {
         path: 'messages',
         component: MessageComponent
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
       },
 
 
@@ -49,7 +45,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [AdminComponent, PostComponent, MessageComponent, LoginComponent, ForgotComponent, MainAdminComponent],
+  declarations: [AdminComponent, PostComponent, MessageComponent, MainAdminComponent, DashboardComponent],
   imports: [
     RouterModule.forChild(routes),
     CommonModule,

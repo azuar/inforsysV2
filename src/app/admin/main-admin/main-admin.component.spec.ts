@@ -15,17 +15,9 @@ describe('MainAdminComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MainAdminComponent],
-      imports: [
-        NoopAnimationsModule,
-        LayoutModule,
-        MatButtonModule,
-        MatIconModule,
-        MatListModule,
-        MatSidenavModule,
-        MatToolbarModule,
-      ]
-    }).compileComponents();
+      declarations: [MainAdminComponent]
+    })
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -34,7 +26,7 @@ describe('MainAdminComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should compile', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
